@@ -2,7 +2,15 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
       "source": "/proxy/(.*)",
+      "destination": "http://113.250.181.154:6006/$1"
+    },
+    {
+      "source": "/(.*)",
       "destination": "http://113.250.181.154:6006/$1"
     }
   ]
