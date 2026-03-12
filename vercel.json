@@ -1,12 +1,9 @@
 {
+  "version": 2,
   "rewrites": [
     {
-      "source": "/proxy/:path*",
-      "destination": "http://113.250.181.154:6006/:path*"
-    },
-    {
-        "source": "/",
-        "destination": "/index.html"
+      "source": "/proxy/(.*)",
+      "destination": "http://113.250.181.154:6006/$1"
     }
   ]
 }
