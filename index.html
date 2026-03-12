@@ -19,7 +19,7 @@
         .container {
             width: 100vw;
             height: 100vh;
-            border: 1px solid #e0e0e0; /* 极细的浅灰色边框 */
+            border: 1px solid #e0e0e0;
             display: flex;
             flex-direction: column;
         }
@@ -32,7 +32,8 @@
 </head>
 <body>
     <div class="container">
-        <iframe src="http://113.250.181.154:6006/" title="Law Chat Content"></iframe>
+        <!-- 通过 Vercel 反向代理加载，避免 Mixed Content 错误 -->
+        <iframe src="/proxy/" title="Law Chat Content"></iframe>
     </div>
 </body>
 </html>
